@@ -123,10 +123,10 @@ PRODUCT_PROPERTY_OVERRIDES := \
     ro.usb.pid_suffix=1FA
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/sony/tama/platform.mk)
+$(call inherit-product, device/sony/tama-common/platform.mk)
 
 # copy NFC firmware
-$(call inherit-product-if-exists, vendor/nxp/nxp-vendor.mk)
+$(call inherit-product-if-exists, vendor/sony/nxp/nxp-vendor.mk)
 
 # include board vendor blobs
 $(call inherit-product-if-exists, vendor/sony/tama-common/tama-partial.mk)
