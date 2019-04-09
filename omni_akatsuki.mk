@@ -28,6 +28,9 @@ PRODUCT_MODEL := Xperia XZ3
 # Assert
 TARGET_OTA_ASSERT_DEVICE := akatsuki
 
+# TWRP prop to fix touch by blanking the screen on boot
+TW_SCREEN_BLANK_ON_BOOT := true
+
 # Inherit rom parts
 $(call inherit-product, device/sony/common/omni.mk)
 
